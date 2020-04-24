@@ -1,7 +1,7 @@
 <?php
 function checkClassroomName($str)
 {
-    $regex = '/(^C|A|P)[\d]{4}(G|H|I|K|L|M)$/';
+    $regex = '/^(C|A|P)[\d]{4}(G|H|I|K|L|M)$/';
     if (preg_match($regex, $str)) {
         echo "Classroom's name is valid";
     } else {
